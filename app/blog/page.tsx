@@ -1,17 +1,6 @@
-import { link } from "fs";
+import { getData } from "@/utils/getData";
 import { Metadata } from "next";
 import Link from "next/link";
-
-async function getData() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
-    next: {
-      revalidate: 60,
-    },
-  });
-
-  if (!res.ok) throw new Error("Unable fetch posts");
-  return res.json();
-}
 
 export const metadata: Metadata = {
   title: "Blog",
