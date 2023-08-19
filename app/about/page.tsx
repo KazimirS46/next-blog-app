@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About"
+  title: "About he he he",
 };
 
 export default function About() {

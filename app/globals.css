@@ -52,7 +52,7 @@ main {
   text-align: center;
 }
 
-.container > div {
+.container {
   width: 60vw;
   margin: 0 auto;
 }
